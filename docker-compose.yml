@@ -4,5 +4,6 @@ services:
  nginx:
    image: guvi:v1
    container_name: nginx-demo
-      ports:
-     - "80:80"
+   restart: always
+   ports:
+      - "80:80"
